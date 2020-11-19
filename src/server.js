@@ -3,6 +3,7 @@ import props from "./config/properties";
 import db from "./config/db";
 import bodyParser from "body-parser";
 import clinicalRoutes from "./routes";
+import cors from "cors";
 
 //invoke database connection
 db();
@@ -11,6 +12,8 @@ const app = express();
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+
+app.use(cors());
 
 const clinicalRouter = express.Router();
 clinicalRoutes(clinicalRouter);
