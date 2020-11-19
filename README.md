@@ -38,3 +38,5 @@
 ## Delete Operation
 
 - /clinicals/:patientId/:componentName to delete clinical data
+
+https://whispering-retreat-57435.herokuapp.com/ | https://git.heroku.com/whispering-retreat-57435.git
